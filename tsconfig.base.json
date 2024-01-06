@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@learnbase-ui/storybook-host": ["libs/storybook-host/src/index.ts"],
       "@learnbase-ui/text": ["libs/text/src/index.ts"]
     }
   },
