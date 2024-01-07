@@ -14,8 +14,7 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/libs/button",
-        "postcssConfig": "libs/button/postcss.config.js"
+        "outputPath": "dist/libs/button"
       },
       "configurations": {
         "development": {
