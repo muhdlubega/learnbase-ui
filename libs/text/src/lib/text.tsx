@@ -6,7 +6,7 @@ export interface TextProps {}
 export function Text(props: TextProps) {
   return (
     <div className={styles['container']}>
-      <h1>Welcome to Text!</h1>
+      <h1 className="bg-black">Welcome to Text!</h1>
     </div>
   );
 }

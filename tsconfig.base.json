@@ -15,6 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@learnbase-ui/button": ["libs/button/src/index.ts"],
+      "@learnbase-ui/global-types": ["libs/global-types/src/index.ts"],
       "@learnbase-ui/storybook-host": ["libs/storybook-host/src/index.ts"],
       "@learnbase-ui/text": ["libs/text/src/index.ts"]
     }
