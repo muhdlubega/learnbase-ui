@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Typography } from './typography';
 
-
 const meta: Meta<typeof Typography> = {
   component: Typography,
   title: 'Text',
@@ -65,42 +64,88 @@ const meta: Meta<typeof Typography> = {
     },
     fontStyle: {
       options: ['normal', 'italic'],
-      control: { type: 'radio' },
+      control: { type: 'select' },
       table: {
         defaultValue: { summary: 'normal' },
       },
     },
     fontWeight: {
-      options: ['normal', 'bold', 'bolder', 'lighter'],
-      control: { type: 'radio' },
+      options: [
+        'thin',
+        'extraLight',
+        'light',
+        'normal',
+        'medium',
+        'semiBold',
+        'bold',
+        'extraBold',
+        'black',
+      ],
+      control: { type: 'select' },
       table: {
         defaultValue: { summary: 'normal' },
-      },
-    },
-    fullWidth: {
-      control: { type: 'boolean' },
-      table: {
-        defaultValue: { summary: false },
       },
     },
     size: {
       description: '`xs` | `sm` | `md` | `lg` | `xl`',
       options: ['xs', 'sm', 'md', 'lg', 'xl'],
-      control: { type: 'radio' },
+      control: { type: 'select' },
       table: {
         defaultValue: { summary: 'md' },
       },
     },
     textOverflow: {
       options: ['truncate', 'ellipsis', 'clip'],
-      control: { type: 'radio' },
+      control: { type: 'select' },
       table: {
         defaultValue: { summary: 'clip' },
       },
     },
     textTransform: {
       options: ['uppercase', 'lowercase', 'capitalize', 'normal'],
-      control: { type: 'radio' },
+      control: { type: 'select' },
+      table: {
+        defaultValue: { summary: 'normal' },
+      },
+    },
+    verticalAlign: {
+      options: ['baseline', 'top', 'bottom', 'middle', 'textTop', 'textBottom', 'sub', 'super'],
+      control: { type: 'select' },
+      table: {
+        defaultValue: { summary: 'baseline' },
+      },
+    },
+    textDecoration: {
+      options: ['none', 'underline', 'overline', 'lineThrough', 'noUnderline'],
+      control: { type: 'select' },
+      table: {
+        defaultValue: { summary: 'none' },
+      },
+    },
+    textAlign: {
+      options: ['left', 'right', 'center', 'justify', 'start', 'end'],
+      control: { type: 'select' },
+      table: {
+        defaultValue: { summary: 'left' },
+      },
+    },
+    letterSpacing: {
+      options: ['tighter', 'tight', 'normal', 'wide', 'wider', 'widest'],
+      control: { type: 'select' },
+      table: {
+        defaultValue: { summary: 'normal' },
+      },
+    },
+    listStyleType: {
+      options: ['none', 'disc', 'circle', 'square', 'decimal'],
+      control: { type: 'select' },
+      table: {
+        defaultValue: { summary: 'none' },
+      },
+    },
+    fontVariantNumeric: {
+      options: ['normal', 'ordinal', 'slashedZero', 'lining', 'oldstyle', 'proportional', 'tabular', 'diagonalFractions', 'stackedFractions'],
+      control: { type: 'select' },
       table: {
         defaultValue: { summary: 'normal' },
       },
@@ -112,14 +157,18 @@ type Story = StoryObj<typeof Typography>;
 
 export const Primary: Story = {
   args: {
-    children: "Text",
-    color: "primary",
-    fontStyle: "normal",
-    fontWeight: "normal",
-    fullWidth: false,
+    children: 'Text',
+    color: 'primary',
+    fontStyle: 'normal',
+    fontWeight: 'normal',
     size: 'md',
-    textOverflow: "clip",
-    textTransform: "normal",
+    textOverflow: 'clip',
+    textTransform: 'normal',
+    verticalAlign: 'baseline',
+    textDecoration: 'none',
+    textAlign: 'left',
+    letterSpacing: 'normal',
+    listStyleType: 'none',
+    fontVariantNumeric: 'normal',
   },
 };
-
