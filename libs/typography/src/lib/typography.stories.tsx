@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Text } from './text';
+import { Typography } from './typography';
 
 import { within } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
 
-const meta: Meta<typeof Text> = {
-  component: Text,
+const meta: Meta<typeof Typography> = {
+  component: Typography,
   title: 'Text',
 };
 export default meta;
-type Story = StoryObj<typeof Text>;
+type Story = StoryObj<typeof Typography>;
 
 export const Primary = {
   args: {},
