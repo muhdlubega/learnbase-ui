@@ -69,7 +69,7 @@ const buttonStyles = cva('text-white flex items-center', {
     color: 'primary',
     size: 'md',
     rounded: 'md',
-    iconPosition: 'start',
+    iconPosition: 'end',
     fullWidth: false,
   },
 });
