@@ -79,7 +79,7 @@ const buttonStyles = cva('flex items-center transition-all border', {
     color: 'primary',
     size: 'md',
     rounded: 'md',
-    iconPosition: 'start',
+    iconPosition: 'end',
     fullWidth: false,
   },
 });
