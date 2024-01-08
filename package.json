@@ -7,7 +7,7 @@
     "dev": "nx serve learnbase-ui --open",
     "build": "nx run-many --all --target build",
     "build:ci": "npx nx ci && npm run build",
-    "build:sotrybook": "nx run storybook-host:build-storybook"
+    "build:storybook": "nx run storybook-host:build-storybook"
   },
   "private": true,
   "dependencies": {
