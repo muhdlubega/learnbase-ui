@@ -2,6 +2,11 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Button, ButtonProps } from './button';
 import { FiAlertCircle } from 'react-icons/fi';
 
+const icon: Record<string, React.ReactNode | null> = {
+  icon: <FiAlertCircle />,
+  none: null,
+};
+
 const meta: Meta<typeof Button> = {
   component: Button,
   title: 'Button',
@@ -9,7 +14,15 @@ const meta: Meta<typeof Button> = {
   // parameters: { layout: 'centered' },
   argTypes: {
     className: { table: { disable: true } },
-    icon: { table: { disable: true } },
+    icon: {
+      description: '`ReactNode`',
+      options: Object.keys(icon),
+      mapping: icon,
+      control: {
+        type: 'radio',
+      },
+      table: { defaultValue: { summary: 'none' } },
+    },
     label: { description: '`string`' },
     variant: {
       description: '`outlined` | `contained`',
@@ -106,7 +119,7 @@ export const Rounded: Story = {
   },
 };
 
-export const OnlyIcon: Story = {
+export const IconButton: Story = {
   args: {
     icon: <FiAlertCircle />,
     rounded: 'full',
