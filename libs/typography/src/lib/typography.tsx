@@ -7,7 +7,7 @@ import { cva } from 'cva';
 export type TypographySizeProps = Exclude<SizeVariants, '2xl' | '3xl'>;
 export interface TypographyProps extends React.HTMLAttributes<HTMLDivElement> {
   color?: ColorVariants;
-  fontStyle?: 'normal' | 'italic' | 'oblique' | undefined;
+  fontStyle?: 'normal' | 'italic' | undefined;
   fontWeight?: 'normal' | 'bold' | 'bolder' | 'lighter' | undefined;
   fullWidth?: boolean;
   size?: TypographySizeProps;
@@ -18,72 +18,70 @@ export interface TypographyProps extends React.HTMLAttributes<HTMLDivElement> {
   | 'capitalize'
   | 'normal'
   | undefined;
-  textWrap?: 'normal' | 'nowrap' | 'pre' | 'preLine' | 'preWrap' | undefined;
 }
 
-const typographyStyles = cva('text-white', {
+const typographyStyles = cva('text-black', {
   variants: {
     color: {
-      primary: 'text-black',
-      secondary: 'text-gray-500',
-      error: 'text-red-500',
-      success: 'text-green-600',
-      warning: 'text-amber-400',
-      darkSlate: 'text-slate-800',
-      lightSlate: 'text-slate-300',
-      darkGray: 'text-gray-800',
-      lightGray: 'text-gray-300',
-      darkZinc: 'text-zinc-800',
-      lightZinc: 'text-zinc-300',
-      darkNeutral: 'text-neutral-800',
-      lightNeutral: 'text-neutral-300',
-      darkStone: 'text-stone-800',
-      lightStone: 'text-stone-300',
-      darkRed: 'text-red-800',
-      lightRed: 'text-red-300',
-      darkOrange: 'text-orange-800',
-      lightOrange: 'text-orange-300',
-      darkAmber: 'text-amber-800',
-      lightAmber: 'text-amber-300',
-      darkYellow: 'text-yellow-800',
-      lightYellow: 'text-yellow-300',
-      darkLime: 'text-lime-800',
-      lightLime: 'text-lime-300',
-      darkGreen: 'text-green-800',
-      lightGreen: 'text-green-300',
-      darkEmerald: 'text-emerald-800',
-      lightEmerald: 'text-emerald-300',
-      darkTeal: 'text-teal-800',
-      lightTeal: 'text-teal-300',
-      darkCyan: 'text-cyan-800',
-      lightCyan: 'text-cyan-300',
-      darkSky: 'text-sky-800',
-      lightSky: 'text-sky-300',
-      darkBlue: 'text-blue-800',
-      lightBlue: 'text-blue-300',
-      darkIndigo: 'text-indigo-800',
-      lightIndigo: 'text-indigo-300',
-      darkViolet: 'text-violet-800',
-      lightViolet: 'text-violet-300',
-      darkPurple: 'text-purple-800',
-      lightPurple: 'text-purple-300',
-      darkFuchsia: 'text-fuchsia-800',
-      lightFuchsia: 'text-fuchsia-300',
-      darkPink: 'text-pink-800',
-      lightPink: 'text-pink-300',
-      darkRose: 'text-rose-800',
-      lightRose: 'text-rose-300',
+      primary: 'text-primary',
+      secondary: 'text-secondary',
+      error: 'text-error',
+      success: 'text-success',
+      warning: 'text-warning',
+      darkSlate: 'text-darkSlate',
+      lightSlate: 'text-lightSlate',
+      darkGray: 'text-darkGray',
+      lightGray: 'text-lightGray',
+      darkZinc: 'text-darkZinc',
+      lightZinc: 'text-lightZinc',
+      darkNeutral: 'text-darkNeutral',
+      lightNeutral: 'text-lightNeutral',
+      darkStone: 'text-darkStone',
+      lightStone: 'text-lightStone',
+      darkRed: 'text-darkRed',
+      lightRed: 'text-lightRed',
+      darkOrange: 'text-darkOrange',
+      lightOrange: 'text-lightOrange',
+      darkAmber: 'text-darkAmber',
+      lightAmber: 'text-lightAmber',
+      darkYellow: 'text-darkYellow',
+      lightYellow: 'text-lightYellow',
+      darkLime: 'text-darkLime',
+      lightLime: 'text-lightLime',
+      darkGreen: 'text-darkGreen',
+      lightGreen: 'text-lightGreen',
+      darkEmerald: 'text-darkEmerald',
+      lightEmerald: 'text-lightEmerald',
+      darkTeal: 'text-darkTeal',
+      lightTeal: 'text-lightTeal',
+      darkCyan: 'text-darkCyan',
+      lightCyan: 'text-lightCyan',
+      darkSky: 'text-darkSky',
+      lightSky: 'text-lightSky',
+      darkBlue: 'text-darkBlue',
+      lightBlue: 'text-lightBlue',
+      darkIndigo: 'text-darkIndigo',
+      lightIndigo: 'text-lightIndigo',
+      darkViolet: 'text-darkViolet',
+      lightViolet: 'text-lightViolet',
+      darkPurple: 'text-darkPurple',
+      lightPurple: 'text-lightPurple',
+      darkFuchsia: 'text-darkFuchsia',
+      lightFuchsia: 'text-lightFuchsia',
+      darkPink: 'text-darkPink',
+      lightPink: 'text-lightPink',
+      darkRose: 'text-darkRose',
+      lightRose: 'text-lightRose',
     },
     fontStyle: {
       normal: 'font-normal',
       italic: 'italic',
-      oblique: 'font-oblique',
     },
     fontWeight: {
       normal: 'font-normal',
       bold: 'font-bold',
-      bolder: 'font-bolder',
-      lighter: 'font-lighter',
+      bolder: 'font-extrabold',
+      lighter: 'font-extralight',
     },
     fullWidth: {
       true: 'w-full',
@@ -107,13 +105,6 @@ const typographyStyles = cva('text-white', {
       normal: 'normal-case',
       uppercase: 'uppercase',
     },
-    textWrap: {
-      normal: 'whitespace-normal',
-      nowrap: 'whitespace-nowrap',
-      pre: 'whitespace-pre',
-      preLine: 'whitespace-pre-line',
-      preWrap: 'whitespace-pre-wrap',
-    },
   },
   defaultVariants: {
     color: 'primary',
@@ -123,7 +114,6 @@ const typographyStyles = cva('text-white', {
     size: 'md',
     textOverflow: 'clip',
     textTransform: 'normal',
-    textWrap: 'normal',
   },
 });
 
@@ -137,11 +127,10 @@ export const Typography: React.FC<TypographyProps> = ({
   size,
   textOverflow,
   textTransform,
-  textWrap,
   ...rest
 }) => {
   return (
-    <div
+    <p
       className={twMerge(
         typographyStyles({
           color,
@@ -151,14 +140,13 @@ export const Typography: React.FC<TypographyProps> = ({
           size,
           textOverflow,
           textTransform,
-          textWrap,
         }),
         className
       )}
       {...rest}
     >
       {children}
-    </div>
+    </p>
   );
 };
 
