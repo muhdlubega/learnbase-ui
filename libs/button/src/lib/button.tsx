@@ -20,7 +20,7 @@ export interface ButtonProps
 const buttonStyles = cva('flex items-center transition-all border', {
   variants: {
     variant: {
-      outlined: '',
+      outlined: ' ',
       contained: '',
     },
     color: {
