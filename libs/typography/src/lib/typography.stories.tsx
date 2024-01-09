@@ -109,7 +109,16 @@ const meta: Meta<typeof Typography> = {
       },
     },
     verticalAlign: {
-      options: ['baseline', 'top', 'bottom', 'middle', 'textTop', 'textBottom', 'sub', 'super'],
+      options: [
+        'baseline',
+        'top',
+        'bottom',
+        'middle',
+        'textTop',
+        'textBottom',
+        'sub',
+        'super',
+      ],
       control: { type: 'select' },
       table: {
         defaultValue: { summary: 'baseline' },
@@ -144,7 +153,17 @@ const meta: Meta<typeof Typography> = {
       },
     },
     fontVariantNumeric: {
-      options: ['normal', 'ordinal', 'slashedZero', 'lining', 'oldstyle', 'proportional', 'tabular', 'diagonalFractions', 'stackedFractions'],
+      options: [
+        'normal',
+        'ordinal',
+        'slashedZero',
+        'lining',
+        'oldstyle',
+        'proportional',
+        'tabular',
+        'diagonalFractions',
+        'stackedFractions',
+      ],
       control: { type: 'select' },
       table: {
         defaultValue: { summary: 'normal' },

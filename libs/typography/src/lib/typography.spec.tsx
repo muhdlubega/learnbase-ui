@@ -17,7 +17,9 @@ describe('Typography Component', () => {
   });
 
   it('applies color variant correctly', () => {
-    const { container } = render(<Typography color="secondary">Color Test</Typography>);
+    const { container } = render(
+      <Typography color="secondary">Color Test</Typography>
+    );
     expect(container.firstChild).toHaveClass('text-secondary');
   });
 
