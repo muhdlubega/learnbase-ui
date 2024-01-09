@@ -1,2 +1,18 @@
-- name: Deploy Storybook to GitHub Pages
-  uses: bitovi/github-actions-storybook-to-github-pages@v1.0.2
+on:
+  push:
+    branches:
+      - 'main' # change to the branch you wish to deploy from
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - id: build-publish
+        uses: bitovi/github-actions-storybook-to-github-pages@v1.0.2
+        with:
+          path: dist/storybook
