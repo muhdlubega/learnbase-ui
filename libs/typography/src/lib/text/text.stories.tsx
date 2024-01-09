@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Typography } from './typography';
+import { Text } from './text';
 
-const meta: Meta<typeof Typography> = {
-  component: Typography,
+const meta: Meta<typeof Text> = {
+  component: Text,
   title: 'Text',
   argTypes: {
     color: {
@@ -87,8 +87,8 @@ const meta: Meta<typeof Typography> = {
       },
     },
     size: {
-      description: '`xs` | `sm` | `md` | `lg` | `xl` | `2xl` | `3xl` ',
-      options: ['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl'],
+      description: '`xs` | `sm` | `md` | `lg` | `xl` | `2xl` | `3xl` | `4xl` | `5xl` ',
+      options: ['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl'],
       control: { type: 'select' },
       table: {
         defaultValue: { summary: 'md' },
@@ -172,7 +172,7 @@ const meta: Meta<typeof Typography> = {
   },
 };
 export default meta;
-type Story = StoryObj<typeof Typography>;
+type Story = StoryObj<typeof Text>;
 
 export const Primary: Story = {
   args: {

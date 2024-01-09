@@ -1,6 +1,6 @@
 import { cva } from 'cva';
 
-export const typographyStyles = cva('text-black', {
+export const textStyles = cva('text-black', {
   variants: {
     color: {
       primary: 'text-primary',
@@ -76,6 +76,8 @@ export const typographyStyles = cva('text-black', {
       xl: 'text-xl leading-body-xl',
       '2xl': 'text-2xl leading-body-2xl',
       '3xl': 'text-3xl leading-body-3xl',
+      '4xl': 'text-4xl leading-body-4xl',
+      '5xl': 'text-5xl leading-body-5xl',
     },
     textOverflow: {
       clip: 'overflow-clip',

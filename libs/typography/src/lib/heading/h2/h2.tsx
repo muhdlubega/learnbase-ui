@@ -13,12 +13,10 @@ import {
   VerticalAlignmentVariants,
   WeightVariants,
 } from '@learnbase-ui/global-types';
-import { typographyStyles } from './typography.class';
+import { textStyles } from '../../text/text.class';
 import { twMerge } from 'tailwind-merge';
-import '../styles.scss';
 
-export interface TypographyProps
-  extends React.HTMLAttributes<HTMLParagraphElement> {
+export interface H2Props extends React.ComponentProps<'h2'> {
   color?: ColorVariants;
   fontStyle?: FontStyleVariants;
   fontWeight?: WeightVariants;
@@ -33,27 +31,27 @@ export interface TypographyProps
   fontVariantNumeric?: NumericVariants;
 }
 
-export const Typography: React.FC<TypographyProps> = ({
+export const H2: React.FC<H2Props> = ({
   children,
   className,
   color,
   fontStyle,
-  fontWeight,
-  size,
+  fontWeight = 'bold',
+  size = '4xl',
   textOverflow,
   textTransform,
   verticalAlign,
   textDecoration,
   textAlign,
-  letterSpacing,
+  letterSpacing = 'tight',
   listStyleType,
   fontVariantNumeric,
   ...rest
 }) => {
   return (
-    <p
+    <h2
       className={twMerge(
-        typographyStyles({
+        textStyles({
           color,
           fontStyle,
           fontWeight,
@@ -72,8 +70,8 @@ export const Typography: React.FC<TypographyProps> = ({
       {...rest}
     >
       {children}
-    </p>
+    </h2>
   );
 };
 
-export default Typography;
+export default H2;
