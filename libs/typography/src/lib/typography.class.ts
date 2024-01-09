@@ -74,6 +74,8 @@ export const typographyStyles = cva('text-black', {
         md: 'text-md leading-body-md',
         lg: 'text-lg leading-body-lg',
         xl: 'text-xl leading-body-xl',
+        '2xl': 'text-2xl leading-body-2xl',
+        '3xl': 'text-3xl leading-body-3xl',
       },
       textOverflow: {
         clip: 'overflow-clip',
@@ -103,12 +105,12 @@ export const typographyStyles = cva('text-black', {
         none: 'no-underline',
       },
       textAlign: {
-        left: 'left',
-        right: 'right',
-        center: 'center',
-        justify: 'justify',
-        start: 'start',
-        end: 'end',
+        left: 'text-left',
+        right: 'text-right',
+        center: 'text-center',
+        justify: 'text-justify',
+        start: 'text-start',
+        end: 'text-end',
       },
       letterSpacing: {
         tighter: 'tracking-tighter',

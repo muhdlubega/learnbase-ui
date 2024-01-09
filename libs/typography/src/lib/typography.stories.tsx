@@ -87,8 +87,8 @@ const meta: Meta<typeof Typography> = {
       },
     },
     size: {
-      description: '`xs` | `sm` | `md` | `lg` | `xl`',
-      options: ['xs', 'sm', 'md', 'lg', 'xl'],
+      description: '`xs` | `sm` | `md` | `lg` | `xl` | `2xl` | `3xl` ',
+      options: ['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl'],
       control: { type: 'select' },
       table: {
         defaultValue: { summary: 'md' },
@@ -116,7 +116,7 @@ const meta: Meta<typeof Typography> = {
       },
     },
     textDecoration: {
-      options: ['none', 'underline', 'overline', 'lineThrough', 'noUnderline'],
+      options: ['none', 'underline', 'overline', 'lineThrough'],
       control: { type: 'select' },
       table: {
         defaultValue: { summary: 'none' },

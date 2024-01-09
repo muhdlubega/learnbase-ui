@@ -1,78 +1,36 @@
 import React from 'react';
-import { ColorVariants, SizeVariants } from '@learnbase-ui/global-types';
+import {
+  AlignmentVariants,
+  ColorVariants,
+  FontStyleVariants,
+  ListStyleVariants,
+  NumericVariants,
+  OverflowVariants,
+  SizeVariants,
+  SpacingVariants,
+  TextDecorationVariants,
+  TextTransformVariants,
+  VerticalAlignmentVariants,
+  WeightVariants,
+} from '@learnbase-ui/global-types';
 import { typographyStyles } from './typography.class';
 import { twMerge } from 'tailwind-merge';
 import '../styles.scss';
 
-export type TypographySizeProps = Exclude<SizeVariants, '2xl' | '3xl'>;
 export interface TypographyProps
   extends React.HTMLAttributes<HTMLParagraphElement> {
   color?: ColorVariants;
-  fontStyle?: 'normal' | 'italic' | undefined;
-  fontWeight?:
-    | 'thin'
-    | 'extraLight'
-    | 'light'
-    | 'normal'
-    | 'medium'
-    | 'semiBold'
-    | 'bold'
-    | 'extraBold'
-    | 'black'
-    | undefined;
-  size?: TypographySizeProps;
-  textOverflow?: 'truncate' | 'ellipsis' | 'clip' | undefined;
-  textTransform?:
-    | 'uppercase'
-    | 'lowercase'
-    | 'capitalize'
-    | 'normal'
-    | undefined;
-  verticalAlign?:
-    | 'baseline'
-    | 'top'
-    | 'middle'
-    | 'bottom'
-    | 'textTop'
-    | 'textBottom'
-    | 'sub'
-    | 'super'
-    | undefined;
-  textDecoration?:
-    | 'none'
-    | 'underline'
-    | 'overline'
-    | 'lineThrough'
-    | 'noUnderline'
-    | undefined;
-  textAlign?:
-    | 'left'
-    | 'center'
-    | 'right'
-    | 'justify'
-    | 'start'
-    | 'end'
-    | undefined;
-  letterSpacing?:
-    | 'tighter'
-    | 'tight'
-    | 'normal'
-    | 'wide'
-    | 'wider'
-    | 'widest'
-    | undefined;
-  listStyleType?: 'none' | 'disc' | 'circle' | 'square' | 'decimal' | undefined;
-  fontVariantNumeric?:
-    | 'normal'
-    | 'ordinal'
-    | 'slashedZero'
-    | 'lining'
-    | 'oldstyle'
-    | 'proportional'
-    | 'tabular'
-    | 'diagonalFractions'
-    | 'stackedFractions'
-    | undefined;
+  fontStyle?: FontStyleVariants;
+  fontWeight?: WeightVariants;
+  size?: SizeVariants;
+  textOverflow?: OverflowVariants;
+  textTransform?: TextTransformVariants;
+  verticalAlign?: VerticalAlignmentVariants;
+  textDecoration?: TextDecorationVariants;
+  textAlign?: AlignmentVariants;
+  letterSpacing?: SpacingVariants;
+  listStyleType?: ListStyleVariants;
+  fontVariantNumeric?: NumericVariants;
 }
 
 export const Typography: React.FC<TypographyProps> = ({
