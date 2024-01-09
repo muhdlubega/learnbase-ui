@@ -81,7 +81,9 @@
   "tasksRunnerOptions": {
     "default": {
       "options": {
-        "cacheableOperations": ["build-storybook"]
+        "cacheableOperations": ["build-storybook"],
+        "token": "<token>",
+        "teamId": "<teamId>"
       }
     }
   }
