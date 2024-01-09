@@ -87,8 +87,8 @@ const meta: Meta<typeof Typography> = {
       },
     },
     size: {
-      description: '`xs` | `sm` | `md` | `lg` | `xl`',
-      options: ['xs', 'sm', 'md', 'lg', 'xl'],
+      description: '`xs` | `sm` | `md` | `lg` | `xl` | `2xl` | `3xl` ',
+      options: ['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl'],
       control: { type: 'select' },
       table: {
         defaultValue: { summary: 'md' },
@@ -109,14 +109,23 @@ const meta: Meta<typeof Typography> = {
       },
     },
     verticalAlign: {
-      options: ['baseline', 'top', 'bottom', 'middle', 'textTop', 'textBottom', 'sub', 'super'],
+      options: [
+        'baseline',
+        'top',
+        'bottom',
+        'middle',
+        'textTop',
+        'textBottom',
+        'sub',
+        'super',
+      ],
       control: { type: 'select' },
       table: {
         defaultValue: { summary: 'baseline' },
       },
     },
     textDecoration: {
-      options: ['none', 'underline', 'overline', 'lineThrough', 'noUnderline'],
+      options: ['none', 'underline', 'overline', 'lineThrough'],
       control: { type: 'select' },
       table: {
         defaultValue: { summary: 'none' },
@@ -144,7 +153,17 @@ const meta: Meta<typeof Typography> = {
       },
     },
     fontVariantNumeric: {
-      options: ['normal', 'ordinal', 'slashedZero', 'lining', 'oldstyle', 'proportional', 'tabular', 'diagonalFractions', 'stackedFractions'],
+      options: [
+        'normal',
+        'ordinal',
+        'slashedZero',
+        'lining',
+        'oldstyle',
+        'proportional',
+        'tabular',
+        'diagonalFractions',
+        'stackedFractions',
+      ],
       control: { type: 'select' },
       table: {
         defaultValue: { summary: 'normal' },
