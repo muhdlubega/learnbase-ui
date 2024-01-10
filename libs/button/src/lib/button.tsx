@@ -4,7 +4,10 @@ import { twMerge } from 'tailwind-merge';
 import '../styles.scss';
 import { cva } from 'cva';
 
-export type ButtonSizeProps = Exclude<SizeVariants, '2xl' | '3xl'>;
+export type ButtonSizeProps = Exclude<
+  SizeVariants,
+  '2xl' | '3xl' | '4xl' | '5xl'
+>;
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: React.ReactNode;

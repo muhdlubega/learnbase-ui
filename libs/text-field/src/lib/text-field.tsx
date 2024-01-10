@@ -1,3 +1,4 @@
+import { H1 } from '@learnbase-ui/typography';
 import styles from './text-field.module.scss';
 
 /* eslint-disable-next-line */

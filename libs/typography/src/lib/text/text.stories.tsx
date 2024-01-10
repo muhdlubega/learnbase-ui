@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Text } from './text';
+import { Text } from '.';
 
 const meta: Meta<typeof Text> = {
   component: Text,
@@ -7,9 +7,58 @@ const meta: Meta<typeof Text> = {
   tags: ['autodocs'],
   argTypes: {
     color: {
-      description: '`primary` | `secondary` | `error` | `success` | `warning` | `darkSlate` | `lightSlate` | `darkGray` | `lightGray` | `darkZinc` | `lightZinc` | `darkNeutral` | `lightNeutral` | `darkStone` | `lightStone` | `darkRed` | `lightRed` | `darkOrange` | `lightOrange` | `darkAmber` | `lightAmber` | `darkYellow` | `lightYellow` | `darkLime` | `lightLime` | `darkGreen` | `lightGreen` | `darkEmerald` | `lightEmerald` | `darkTeal` | `lightTeal` | `darkCyan` | `lightCyan` | `darkSky` | `lightSky` | `darkBlue` | `lightBlue` | `darkIndigo` | `lightIndigo` | `darkViolet` | `lightViolet` | `darkPurple` | `lightPurple` | `darkFuchsia` | `lightFuchsia` | `darkPink` | `lightPink` | `darkRose` | `lightRose`',
+      description:
+        '`primary` | `secondary` | `error` | `success` | `warning` | `darkSlate` | `lightSlate` | `darkGray` | `lightGray` | `darkZinc` | `lightZinc` | `darkNeutral` | `lightNeutral` | `darkStone` | `lightStone` | `darkRed` | `lightRed` | `darkOrange` | `lightOrange` | `darkAmber` | `lightAmber` | `darkYellow` | `lightYellow` | `darkLime` | `lightLime` | `darkGreen` | `lightGreen` | `darkEmerald` | `lightEmerald` | `darkTeal` | `lightTeal` | `darkCyan` | `lightCyan` | `darkSky` | `lightSky` | `darkBlue` | `lightBlue` | `darkIndigo` | `lightIndigo` | `darkViolet` | `lightViolet` | `darkPurple` | `lightPurple` | `darkFuchsia` | `lightFuchsia` | `darkPink` | `lightPink` | `darkRose` | `lightRose`',
       options: [
-        'primary', 'secondary', 'error', 'success', 'warning', 'darkSlate', 'lightSlate', 'darkGray', 'lightGray', 'darkZinc', 'lightZinc', 'darkNeutral', 'lightNeutral', 'darkStone', 'lightStone', 'darkRed', 'lightRed', 'darkOrange', 'lightOrange', 'darkAmber', 'lightAmber', 'darkYellow', 'lightYellow', 'darkLime', 'lightLime', 'darkGreen', 'lightGreen', 'darkEmerald', 'lightEmerald', 'darkTeal', 'lightTeal', 'darkCyan', 'lightCyan', 'darkSky', 'lightSky', 'darkBlue', 'lightBlue', 'darkIndigo', 'lightIndigo', 'darkViolet', 'lightViolet', 'darkPurple', 'lightPurple', 'darkFuchsia', 'lightFuchsia', 'darkPink', 'lightPink', 'darkRose', 'lightRose'
+        'primary',
+        'secondary',
+        'error',
+        'success',
+        'warning',
+        'darkSlate',
+        'lightSlate',
+        'darkGray',
+        'lightGray',
+        'darkZinc',
+        'lightZinc',
+        'darkNeutral',
+        'lightNeutral',
+        'darkStone',
+        'lightStone',
+        'darkRed',
+        'lightRed',
+        'darkOrange',
+        'lightOrange',
+        'darkAmber',
+        'lightAmber',
+        'darkYellow',
+        'lightYellow',
+        'darkLime',
+        'lightLime',
+        'darkGreen',
+        'lightGreen',
+        'darkEmerald',
+        'lightEmerald',
+        'darkTeal',
+        'lightTeal',
+        'darkCyan',
+        'lightCyan',
+        'darkSky',
+        'lightSky',
+        'darkBlue',
+        'lightBlue',
+        'darkIndigo',
+        'lightIndigo',
+        'darkViolet',
+        'lightViolet',
+        'darkPurple',
+        'lightPurple',
+        'darkFuchsia',
+        'lightFuchsia',
+        'darkPink',
+        'lightPink',
+        'darkRose',
+        'lightRose',
       ],
       control: { type: 'select' },
       table: {
@@ -25,9 +74,18 @@ const meta: Meta<typeof Text> = {
       },
     },
     fontWeight: {
-      description: '`thin` | `extraLight` | `light` | `normal` | `medium` | `semiBold` | `bold` | `extraBold` | `black`',
+      description:
+        '`thin` | `extraLight` | `light` | `normal` | `medium` | `semiBold` | `bold` | `extraBold` | `black`',
       options: [
-        'thin', 'extraLight', 'light', 'normal', 'medium', 'semiBold', 'bold', 'extraBold', 'black'
+        'thin',
+        'extraLight',
+        'light',
+        'normal',
+        'medium',
+        'semiBold',
+        'bold',
+        'extraBold',
+        'black',
       ],
       control: { type: 'select' },
       table: {
@@ -35,7 +93,8 @@ const meta: Meta<typeof Text> = {
       },
     },
     size: {
-      description: '`xs` | `sm` | `md` | `lg` | `xl` | `2xl` | `3xl` | `4xl` | `5xl`',
+      description:
+        '`xs` | `sm` | `md` | `lg` | `xl` | `2xl` | `3xl` | `4xl` | `5xl`',
       options: ['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl'],
       control: { type: 'select' },
       table: {
@@ -59,9 +118,17 @@ const meta: Meta<typeof Text> = {
       },
     },
     verticalAlign: {
-      description: '`baseline` | `top` | `bottom` | `middle` | `textTop` | `textBottom` | `sub` | `super`',
+      description:
+        '`baseline` | `top` | `bottom` | `middle` | `textTop` | `textBottom` | `sub` | `super`',
       options: [
-        'baseline', 'top', 'bottom', 'middle', 'textTop', 'textBottom', 'sub', 'super'
+        'baseline',
+        'top',
+        'bottom',
+        'middle',
+        'textTop',
+        'textBottom',
+        'sub',
+        'super',
       ],
       control: { type: 'select' },
       table: {
@@ -85,7 +152,8 @@ const meta: Meta<typeof Text> = {
       },
     },
     letterSpacing: {
-      description: '`tighter` | `tight` | `normal` | `wide` | `wider` | `widest`',
+      description:
+        '`tighter` | `tight` | `normal` | `wide` | `wider` | `widest`',
       options: ['tighter', 'tight', 'normal', 'wide', 'wider', 'widest'],
       control: { type: 'select' },
       table: {
@@ -101,9 +169,18 @@ const meta: Meta<typeof Text> = {
       },
     },
     fontVariantNumeric: {
-      description: '`normal` | `ordinal` | `slashedZero` | `lining` | `oldstyle` | `proportional` | `tabular` | `diagonalFractions` | `stackedFractions`',
+      description:
+        '`normal` | `ordinal` | `slashedZero` | `lining` | `oldstyle` | `proportional` | `tabular` | `diagonalFractions` | `stackedFractions`',
       options: [
-        'normal', 'ordinal', 'slashedZero', 'lining', 'oldstyle', 'proportional', 'tabular', 'diagonalFractions', 'stackedFractions'
+        'normal',
+        'ordinal',
+        'slashedZero',
+        'lining',
+        'oldstyle',
+        'proportional',
+        'tabular',
+        'diagonalFractions',
+        'stackedFractions',
       ],
       control: { type: 'select' },
       table: {
@@ -124,43 +201,42 @@ export const Default: Story = {
 export const Italic: Story = {
   args: {
     children: 'Italic Text',
-    fontStyle: 'italic'
+    fontStyle: 'italic',
   },
 };
-
 
 export const Bold: Story = {
   args: {
     children: 'Bold Text',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
 };
 
 export const Centered: Story = {
   args: {
-    children: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
-    textAlign: 'center'
+    children:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
+    textAlign: 'center',
   },
 };
 
 export const Wide: Story = {
   args: {
     children: 'Wide Text',
-    letterSpacing: 'wide'
+    letterSpacing: 'wide',
   },
 };
-
 
 export const Underline: Story = {
   args: {
     children: 'Underlined Text',
-    textDecoration: 'underline'
+    textDecoration: 'underline',
   },
 };
 
 export const Ordinal: Story = {
   args: {
     children: '1st',
-    fontVariantNumeric: 'ordinal'
+    fontVariantNumeric: 'ordinal',
   },
 };

@@ -7,9 +7,58 @@ const meta: Meta<typeof H2> = {
   tags: ['autodocs'],
   argTypes: {
     color: {
-      description: '`primary` | `secondary` | `error` | `success` | `warning` | `darkSlate` | `lightSlate` | `darkGray` | `lightGray` | `darkZinc` | `lightZinc` | `darkNeutral` | `lightNeutral` | `darkStone` | `lightStone` | `darkRed` | `lightRed` | `darkOrange` | `lightOrange` | `darkAmber` | `lightAmber` | `darkYellow` | `lightYellow` | `darkLime` | `lightLime` | `darkGreen` | `lightGreen` | `darkEmerald` | `lightEmerald` | `darkTeal` | `lightTeal` | `darkCyan` | `lightCyan` | `darkSky` | `lightSky` | `darkBlue` | `lightBlue` | `darkIndigo` | `lightIndigo` | `darkViolet` | `lightViolet` | `darkPurple` | `lightPurple` | `darkFuchsia` | `lightFuchsia` | `darkPink` | `lightPink` | `darkRose` | `lightRose`',
+      description:
+        '`primary` | `secondary` | `error` | `success` | `warning` | `darkSlate` | `lightSlate` | `darkGray` | `lightGray` | `darkZinc` | `lightZinc` | `darkNeutral` | `lightNeutral` | `darkStone` | `lightStone` | `darkRed` | `lightRed` | `darkOrange` | `lightOrange` | `darkAmber` | `lightAmber` | `darkYellow` | `lightYellow` | `darkLime` | `lightLime` | `darkGreen` | `lightGreen` | `darkEmerald` | `lightEmerald` | `darkTeal` | `lightTeal` | `darkCyan` | `lightCyan` | `darkSky` | `lightSky` | `darkBlue` | `lightBlue` | `darkIndigo` | `lightIndigo` | `darkViolet` | `lightViolet` | `darkPurple` | `lightPurple` | `darkFuchsia` | `lightFuchsia` | `darkPink` | `lightPink` | `darkRose` | `lightRose`',
       options: [
-        'primary', 'secondary', 'error', 'success', 'warning', 'darkSlate', 'lightSlate', 'darkGray', 'lightGray', 'darkZinc', 'lightZinc', 'darkNeutral', 'lightNeutral', 'darkStone', 'lightStone', 'darkRed', 'lightRed', 'darkOrange', 'lightOrange', 'darkAmber', 'lightAmber', 'darkYellow', 'lightYellow', 'darkLime', 'lightLime', 'darkGreen', 'lightGreen', 'darkEmerald', 'lightEmerald', 'darkTeal', 'lightTeal', 'darkCyan', 'lightCyan', 'darkSky', 'lightSky', 'darkBlue', 'lightBlue', 'darkIndigo', 'lightIndigo', 'darkViolet', 'lightViolet', 'darkPurple', 'lightPurple', 'darkFuchsia', 'lightFuchsia', 'darkPink', 'lightPink', 'darkRose', 'lightRose'
+        'primary',
+        'secondary',
+        'error',
+        'success',
+        'warning',
+        'darkSlate',
+        'lightSlate',
+        'darkGray',
+        'lightGray',
+        'darkZinc',
+        'lightZinc',
+        'darkNeutral',
+        'lightNeutral',
+        'darkStone',
+        'lightStone',
+        'darkRed',
+        'lightRed',
+        'darkOrange',
+        'lightOrange',
+        'darkAmber',
+        'lightAmber',
+        'darkYellow',
+        'lightYellow',
+        'darkLime',
+        'lightLime',
+        'darkGreen',
+        'lightGreen',
+        'darkEmerald',
+        'lightEmerald',
+        'darkTeal',
+        'lightTeal',
+        'darkCyan',
+        'lightCyan',
+        'darkSky',
+        'lightSky',
+        'darkBlue',
+        'lightBlue',
+        'darkIndigo',
+        'lightIndigo',
+        'darkViolet',
+        'lightViolet',
+        'darkPurple',
+        'lightPurple',
+        'darkFuchsia',
+        'lightFuchsia',
+        'darkPink',
+        'lightPink',
+        'darkRose',
+        'lightRose',
       ],
       control: { type: 'select' },
       table: {
@@ -25,9 +74,18 @@ const meta: Meta<typeof H2> = {
       },
     },
     fontWeight: {
-      description: '`thin` | `extraLight` | `light` | `normal` | `medium` | `semiBold` | `bold` | `extraBold` | `black`',
+      description:
+        '`thin` | `extraLight` | `light` | `normal` | `medium` | `semiBold` | `bold` | `extraBold` | `black`',
       options: [
-        'thin', 'extraLight', 'light', 'normal', 'medium', 'semiBold', 'bold', 'extraBold', 'black'
+        'thin',
+        'extraLight',
+        'light',
+        'normal',
+        'medium',
+        'semiBold',
+        'bold',
+        'extraBold',
+        'black',
       ],
       control: { type: 'select' },
       table: {
@@ -35,7 +93,8 @@ const meta: Meta<typeof H2> = {
       },
     },
     size: {
-      description: '`xs` | `sm` | `md` | `lg` | `xl` | `2xl` | `3xl` | `4xl` | `5xl`',
+      description:
+        '`xs` | `sm` | `md` | `lg` | `xl` | `2xl` | `3xl` | `4xl` | `5xl`',
       options: ['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl'],
       control: { type: 'select' },
       table: {
@@ -59,9 +118,17 @@ const meta: Meta<typeof H2> = {
       },
     },
     verticalAlign: {
-      description: '`baseline` | `top` | `bottom` | `middle` | `textTop` | `textBottom` | `sub` | `super`',
+      description:
+        '`baseline` | `top` | `bottom` | `middle` | `textTop` | `textBottom` | `sub` | `super`',
       options: [
-        'baseline', 'top', 'bottom', 'middle', 'textTop', 'textBottom', 'sub', 'super'
+        'baseline',
+        'top',
+        'bottom',
+        'middle',
+        'textTop',
+        'textBottom',
+        'sub',
+        'super',
       ],
       control: { type: 'select' },
       table: {
@@ -85,7 +152,8 @@ const meta: Meta<typeof H2> = {
       },
     },
     letterSpacing: {
-      description: '`tighter` | `tight` | `normal` | `wide` | `wider` | `widest`',
+      description:
+        '`tighter` | `tight` | `normal` | `wide` | `wider` | `widest`',
       options: ['tighter', 'tight', 'normal', 'wide', 'wider', 'widest'],
       control: { type: 'select' },
       table: {
@@ -101,9 +169,18 @@ const meta: Meta<typeof H2> = {
       },
     },
     fontVariantNumeric: {
-      description: '`normal` | `ordinal` | `slashedZero` | `lining` | `oldstyle` | `proportional` | `tabular` | `diagonalFractions` | `stackedFractions`',
+      description:
+        '`normal` | `ordinal` | `slashedZero` | `lining` | `oldstyle` | `proportional` | `tabular` | `diagonalFractions` | `stackedFractions`',
       options: [
-        'normal', 'ordinal', 'slashedZero', 'lining', 'oldstyle', 'proportional', 'tabular', 'diagonalFractions', 'stackedFractions'
+        'normal',
+        'ordinal',
+        'slashedZero',
+        'lining',
+        'oldstyle',
+        'proportional',
+        'tabular',
+        'diagonalFractions',
+        'stackedFractions',
       ],
       control: { type: 'select' },
       table: {
