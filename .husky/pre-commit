@@ -1,6 +1,16 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+protected_branch="main"
+current_branch=$(git symbolic-ref --short HEAD 2>/dev/null)
+
+if [ "$current_branch" == "$protected_branch" ]; then
+  echo "Error: Commits directly to the '$protected_branch' branch are not allowed."
+  exit 1
+else
+  exit 0
+fi
+
 echo Building projects to make sure build is pass before push
 npm run build
 
