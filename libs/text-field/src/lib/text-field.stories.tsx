@@ -6,7 +6,7 @@ import { expect } from '@storybook/jest';
 
 const meta: Meta<typeof TextField> = {
   component: TextField,
-  title: 'TextField',
+  title: 'TextField/TextField',
 };
 export default meta;
 type Story = StoryObj<typeof TextField>;
