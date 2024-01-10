@@ -105,6 +105,13 @@ export const Primary = {
   },
 };
 
+export const Secondary = {
+  args: {
+    ...Default.args,
+    color: 'secondary',
+  },
+};
+
 export const Error = {
   args: {
     ...Default.args,
