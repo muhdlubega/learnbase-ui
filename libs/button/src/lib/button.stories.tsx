@@ -98,6 +98,13 @@ export const Contained = {
   },
 };
 
+export const Primary = {
+  args: {
+    ...Default.args,
+    color: 'primary',
+  },
+};
+
 export const Error = {
   args: {
     ...Default.args,
