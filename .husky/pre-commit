@@ -1,5 +1,10 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+echo Building projects to make sure build is pass before push
 npm run build
+
+echo Building storybook
 npm run build-storybook
+
+echo Done
