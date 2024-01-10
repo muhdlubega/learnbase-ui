@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Text from './text';
+import Text from '.';
 
 describe('Text Component', () => {
   it('renders children correctly', () => {
@@ -17,9 +17,7 @@ describe('Text Component', () => {
   });
 
   it('applies color variant correctly', () => {
-    const { container } = render(
-      <Text color="secondary">Color Test</Text>
-    );
+    const { container } = render(<Text color="secondary">Color Test</Text>);
     expect(container.firstChild).toHaveClass('text-secondary');
   });
 

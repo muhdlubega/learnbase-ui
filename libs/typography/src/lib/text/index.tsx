@@ -16,8 +16,7 @@ import {
 import { textStyles } from './text.class';
 import { twMerge } from 'tailwind-merge';
 
-export interface TextProps
-  extends React.HTMLAttributes<HTMLParagraphElement> {
+export interface TextProps extends React.HTMLAttributes<HTMLParagraphElement> {
   color?: ColorVariants;
   fontStyle?: FontStyleVariants;
   fontWeight?: WeightVariants;
