@@ -1,0 +1,87 @@
+
+> @learnbase-ui/source@0.0.0 build-storybook
+> nx build-storybook storybook-host --output-dir /var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c
+
+
+> nx run storybook-host:build-storybook --output-dir /var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c
+
+
+>  NX  Storybook builder starting ...
+
+info => Cleaning outputDir: /var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+info => Loading presets
+info => Building manager..
+info => Manager built (92 ms)
+info => Building preview..
+info => Copying static files: /Users/jiawei/Desktop/vscode/learnbase-ui/node_modules/@storybook/manager/static at /var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/sb-common-assets
+vite v5.0.11 building for production...
+
+./sb-common-assets/fonts.css doesn't exist at build time, it will remain unchanged to be resolved at runtime
+transforming...
+
+WARNING: There was an error creating glob patterns, returning an empty array
+createGlobPatternsForDependencies: Error when trying to determine main project.
+createGlobPatternsForDependencies: Could not find any project containing the file "" among it's project files
+
+node_modules/telejson/dist/index.mjs (1413:15) Use of eval in "node_modules/telejson/dist/index.mjs" is strongly discouraged as it poses security risks and may cause issues with minification.
+node_modules/telejson/dist/index.mjs (1416:18) Use of eval in "node_modules/telejson/dist/index.mjs" is strongly discouraged as it poses security risks and may cause issues with minification.
+✓ 1331 modules transformed.
+Generated an empty chunk: "preview".
+rendering chunks...
+computing gzip size...
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/iframe.html                                     12.65 kB │ gzip:   3.60 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/text-field-f0mNRiTD.css                   0.00 kB │ gzip:   0.02 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/typography-3K-7qX_4.css                  16.35 kB │ gzip:   3.55 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/preview-w40geAFS.js                       0.00 kB │ gzip:   0.02 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/WithTooltip-V3YHNWJZ-pHqyNAVP.js          0.43 kB │ gzip:   0.28 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/syntaxhighlighter-V7JZZA35-BCVcjodC.js    0.44 kB │ gzip:   0.30 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/index-_VGcpBFS.js                         0.58 kB │ gzip:   0.35 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/_commonjsHelpers-4gQjN7DL.js              0.69 kB │ gzip:   0.38 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/preview-rEZJkWLZ.js                       0.71 kB │ gzip:   0.43 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/index-PPLHz8o0.js                         0.77 kB │ gzip:   0.47 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/preview-bEa2SesL.js                       0.86 kB │ gzip:   0.55 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/jsx-runtime-evMRDBC5.js                   0.95 kB │ gzip:   0.60 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/entry-preview-oVjRAT5i.js                 1.12 kB │ gzip:   0.66 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/uniq-k0XJCYw2.js                          1.16 kB │ gzip:   0.65 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/preview-FekBEZxm.js                       3.19 kB │ gzip:   1.37 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/iframe-Zsd6sZwO.js                        4.48 kB │ gzip:   1.79 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/preview-OnO0tzRj.js                       5.23 kB │ gzip:   2.39 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/button.stories-lYryBcwr.js                6.50 kB │ gzip:   2.30 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/typography.stories-azYhUF79.js            7.11 kB │ gzip:   2.08 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/index-4g5l5LRQ.js                         7.16 kB │ gzip:   2.91 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/preview-u8M_OEO2.js                       7.62 kB │ gzip:   1.56 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/preview-TkXSQy1x.js                       8.11 kB │ gzip:   3.08 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/_baseIsEqual-s5eN0r56.js                 13.29 kB │ gzip:   5.40 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/index-oRJpL3FP.js                        13.51 kB │ gzip:   5.05 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/Color-6VNJS4EI-k-IYi4sM.js               17.60 kB │ gzip:   6.75 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/index-0R_M44oj.js                        21.39 kB │ gzip:   7.10 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/_getPrototype-Cj3HGpBb.js                65.21 kB │ gzip:  18.30 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/preview-70qxeh8F.js                      72.07 kB │ gzip:  24.33 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/react-18-0wh8ubQX.js                    134.54 kB │ gzip:  43.44 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/entry-preview-docs-wVHRYZBV.js          322.59 kB │ gzip:  99.12 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/DocsRenderer-NNNQARDV-d_Lq3hR7.js       539.91 kB │ gzip: 176.18 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/formatter-SWP5E3XI-Rt6DekFI.js          601.61 kB │ gzip: 185.06 kB
+../../../../../../../var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c/assets/text-field.stories-r7l_smRj.js          714.08 kB │ gzip: 206.69 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 5.96s
+info => Preview built (6.36 s)
+info => Output directory: /var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c
+
+>  NX  Storybook builder finished ...
+
+
+>  NX  Storybook files available in /var/folders/ky/x0tzcvt57k1bmv0ykzszdbrm0000gn/T/chromatic--69500-HSyjoYIFHq5c
+
+
+ 
+
+ >  NX   Successfully ran target build-storybook for project storybook-host
+
+
+   View logs and investigate cache misses at https://nx.app/runs/ZcqAs9QT8V
+
