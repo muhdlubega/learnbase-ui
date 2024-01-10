@@ -7,4 +7,4 @@ npm run build
 echo Building storybook
 npm run build-storybook
 
-echo Doneedwdewd
+echo Done
