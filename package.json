@@ -11,7 +11,7 @@
     "reset": "nx reset",
     "clean:dist": "rm -rf dist",
     "build:storybook": "nx build-storybook storybook-host",
-    "build-storybook": "npm run reset && npm run clean:dist && npm run build-storybook"
+    "build-storybook": "npm run reset && npm run clean:dist && npm run build:storybook"
   },
   "private": true,
   "dependencies": {
