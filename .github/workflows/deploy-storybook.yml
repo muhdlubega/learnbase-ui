@@ -1,8 +1,8 @@
 name: Storybook
 on:
-  pull_request:
+  push:
     branches:
-      - '*'
+      - main # if any push happens on branch `main`, run this workflow. You could also add `paths` to detect changes in specific folder
 
 jobs:
   build-and-deploy:
@@ -11,31 +11,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.3.1
 
-      - name: Install Dependencies
-        run: npm ci
+      - name: Install and Build
+        run: |
+          npm ci
+          npm run build-storybook
 
-      - name: Build Storybook
-        run: npm run build-storybook
-
-      - name: Set Storybook URL
-        id: set-url
-        run: echo "STORYBOOK_URL=https://$GITHUB_ACTOR.github.io/$GITHUB_REPOSITORY/$GITHUB_HEAD_REF" >> $GITHUB_ENV
-
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
           branch: gh-pages
           folder: dist/storybook/storybook-host # output folder from `npm run build-storybook`
-
-      - name: Set up GitHub CLI
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Comment PR with Storybook link
-        if: github.event_name == 'pull_request'
-        run: |
-          echo "Storybook deployed at $STORYBOOK_URL"
-          gh pr comment ${{ github.event.number }} --body "Storybook deployed at $STORYBOOK_URL"
