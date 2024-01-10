@@ -98,20 +98,6 @@ export const Contained = {
   },
 };
 
-export const Error = {
-  args: {
-    ...Default.args,
-    color: 'error',
-  },
-};
-
-export const Success = {
-  args: {
-    ...Default.args,
-    color: 'success',
-  },
-};
-
 export const WithIcon: Story = {
   args: {
     ...Default.args,
