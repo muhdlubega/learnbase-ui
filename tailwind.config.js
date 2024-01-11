@@ -1,5 +1,6 @@
 const { createGlobPatternsForDependencies } = require('@nx/react/tailwind');
 const { join } = require('path');
+const { color } = require('./libs/global/src');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -74,5 +75,10 @@ module.exports = {
       },
     },
   },
+  safelist: Object.keys(color).flatMap((colorKey) => [
+    `bg-${colorKey}`,
+    `hover:text-${colorKey}`,
+    `border-${colorKey}`,
+  ]),
   plugins: [],
 };

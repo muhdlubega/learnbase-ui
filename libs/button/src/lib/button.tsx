@@ -1,6 +1,6 @@
 import React from 'react';
 import { ColorVariants, SizeVariants } from '@learnbase-ui/global/types';
-import { color } from '@learnbase-ui/global/constant';
+import { color as Colors } from '@learnbase-ui/global/constant';
 import { twMerge } from 'tailwind-merge';
 import '../styles.scss';
 import { cva } from 'cva';
@@ -27,7 +27,7 @@ const buttonStyles = cva('flex items-center transition-all border', {
       outlined: ' ',
       contained: '',
     },
-    color: color,
+    color: Colors,
     // color: {
     //   primary:
     //     'bg-gray-500 hover:bg-gray-500 text-gray-500 hover:text-gray-500 border-gray-500',
@@ -62,12 +62,11 @@ const buttonStyles = cva('flex items-center transition-all border', {
     },
   },
   compoundVariants: [
-    // {
-    //   variant: 'contained',
-    //   color: Object.keys(color) as ColorVariants[],
-    //   class: (color: ColorVariants) =>
-    //     `text-white bg-${color} hover:bg-transparent`,
-    // },
+    ...(Object.keys(Colors).map((colorVariant) => ({
+      variant: 'contained',
+      color: colorVariant,
+      class: `text-white bg-${colorVariant} hover:text-${colorVariant} border-${colorVariant} hover:bg-transparent`,
+    })) as any),
     {
       variant: 'contained',
       color: 'primary',
@@ -80,6 +79,7 @@ const buttonStyles = cva('flex items-center transition-all border', {
       class: 'bg-transparent hover:text-white',
     },
   ],
+
   defaultVariants: {
     variant: 'outlined',
     color: 'primary',
