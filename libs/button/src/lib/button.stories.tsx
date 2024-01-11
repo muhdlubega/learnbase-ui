@@ -8,8 +8,12 @@ const icon: Record<string, React.ReactNode | null> = {
   none: null,
 };
 
+function ButtonComponents(props: ButtonProps) {
+  return <Button {...props} />;
+}
+
 const meta: Meta<typeof Button> = {
-  component: Button,
+  component: ButtonComponents,
   title: 'Button',
   tags: ['autodocs'],
   // parameters: { layout: 'centered' },
