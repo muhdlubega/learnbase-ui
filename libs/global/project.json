@@ -1,7 +1,7 @@
 {
-  "name": "global-types",
+  "name": "global",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/global-types/src",
+  "sourceRoot": "libs/global/src",
   "projectType": "library",
   "tags": [],
   "targets": {
@@ -14,7 +14,7 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/libs/global-types"
+        "outputPath": "dist/libs/global"
       },
       "configurations": {
         "development": {
@@ -29,7 +29,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/global-types/jest.config.ts"
+        "jestConfig": "libs/global/jest.config.ts"
       }
     }
   }

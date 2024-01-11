@@ -12,7 +12,7 @@ import {
   TextTransformVariants,
   VerticalAlignmentVariants,
   WeightVariants,
-} from '@learnbase-ui/global-types';
+} from '@learnbase-ui/global/types';
 import { textStyles } from '../../text/text.class';
 import { twMerge } from 'tailwind-merge';
 

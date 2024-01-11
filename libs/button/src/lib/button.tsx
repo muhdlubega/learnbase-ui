@@ -1,5 +1,6 @@
 import React from 'react';
-import { SizeVariants } from '@learnbase-ui/global-types';
+import { ColorVariants, SizeVariants } from '@learnbase-ui/global/types';
+import { color } from '@learnbase-ui/global/constant';
 import { twMerge } from 'tailwind-merge';
 import '../styles.scss';
 import { cva } from 'cva';
@@ -14,7 +15,7 @@ export interface ButtonProps
   label?: string;
   size?: ButtonSizeProps;
   variant?: 'outlined' | 'contained';
-  color?: 'primary' | 'secondary' | 'error' | 'success';
+  color?: ColorVariants;
   rounded?: 'none' | 'sm' | 'md' | 'lg' | 'full';
   iconPosition?: 'start' | 'end';
   fullWidth?: boolean;
@@ -26,16 +27,17 @@ const buttonStyles = cva('flex items-center transition-all border', {
       outlined: ' ',
       contained: '',
     },
-    color: {
-      primary:
-        'bg-gray-500 hover:bg-gray-500 text-gray-500 hover:text-gray-500 border-gray-500',
-      secondary:
-        'bg-blue-500 hover:bg-blue-500 text-blue-500 hover:text-blue-500 border-blue-500',
-      error:
-        'bg-red-500 hover:bg-red-500 text-red-500 hover:text-red-500 border-red-500',
-      success:
-        'bg-green-600 hover:bg-green-600 text-green-600 hover:text-green-600 border-green-600',
-    },
+    color: color,
+    // color: {
+    //   primary:
+    //     'bg-gray-500 hover:bg-gray-500 text-gray-500 hover:text-gray-500 border-gray-500',
+    //   secondary:
+    //     'bg-blue-500 hover:bg-blue-500 text-blue-500 hover:text-blue-500 border-blue-500',
+    //   error:
+    //     'bg-red-500 hover:bg-red-500 text-red-500 hover:text-red-500 border-red-500',
+    //   success:
+    //     'bg-green-600 hover:bg-green-600 text-green-600 hover:text-green-600 border-green-600',
+    // },
     size: {
       xs: 'px-3 py-1 text-xs gap-1',
       sm: 'px-3 py-1 text-sm gap-1',
@@ -60,16 +62,17 @@ const buttonStyles = cva('flex items-center transition-all border', {
     },
   },
   compoundVariants: [
-    {
-      variant: 'contained',
-      color: ['primary', 'secondary', 'error', 'success'],
-      class: 'text-white hover:bg-transparent',
-    },
+    // {
+    //   variant: 'contained',
+    //   color: Object.keys(color) as ColorVariants[],
+    //   class: (color: ColorVariants) =>
+    //     `text-white bg-${color} hover:bg-transparent`,
+    // },
     {
       variant: 'contained',
       color: 'primary',
       class:
-        'hover:text-gray-500 hover:bg-transparent hover:border-gray-500 border',
+        'hover:text-gray-500 bg-primary hover:bg-transparent hover:border-gray-500 border',
     },
     {
       variant: 'outlined',

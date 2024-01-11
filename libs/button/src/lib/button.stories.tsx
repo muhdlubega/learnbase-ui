@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Button, ButtonProps } from './button';
 import { FiAlertCircle } from 'react-icons/fi';
+import { color } from '@learnbase-ui/global/constant';
 
 const icon: Record<string, React.ReactNode | null> = {
   icon: <FiAlertCircle />,
@@ -34,9 +35,9 @@ const meta: Meta<typeof Button> = {
       },
     },
     color: {
-      description: '`primary` | `secondary` | `error` | `success`',
-      options: ['primary', 'secondary', 'error', 'success'],
-      control: { type: 'radio' },
+      description: '`ColorVariant`',
+      options: Object.keys(color),
+      control: { type: 'select' },
       table: {
         // type: { summary: '-' },
         defaultValue: { summary: 'primary' },
