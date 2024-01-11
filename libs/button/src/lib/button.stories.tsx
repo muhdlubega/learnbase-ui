@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button, ButtonProps } from './Button';
+import { Button } from './Button';
 import { FiAlertCircle } from 'react-icons/fi';
 import { color } from '@learnbase-ui/global/constant';
 
@@ -8,12 +8,8 @@ const icon: Record<string, React.ReactNode | null> = {
   none: null,
 };
 
-function ButtonComponents(props: ButtonProps) {
-  return <Button {...props} />;
-}
-
 const meta: Meta<typeof Button> = {
-  component: ButtonComponents,
+  component: Button,
   title: 'Button',
   tags: ['autodocs'],
   // parameters: { layout: 'centered' },
