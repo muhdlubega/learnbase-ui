@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import H1 from './h1';
+import H1 from '.';
 
 const meta: Meta<typeof H1> = {
   component: H1,
