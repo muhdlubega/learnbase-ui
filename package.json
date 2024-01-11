@@ -7,9 +7,10 @@
     "dev": "nx serve learnbase-ui --open",
     "build": "nx run-many --all --target build",
     "build:ci": "npx nx ci && npm run build",
-    "build-storybook": "nx build-storybook storybook-host",
     "prepare": "husky install",
-    "reset": "nx reset"
+    "reset": "nx reset",
+    "clean:dist": "rm -rf dist",
+    "build-storybook": "nx build-storybook storybook-host"
   },
   "private": true,
   "dependencies": {
