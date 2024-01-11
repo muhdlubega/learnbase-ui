@@ -28,16 +28,6 @@ const buttonStyles = cva('flex items-center transition-all border', {
       contained: '',
     },
     color: Colors,
-    // color: {
-    //   primary:
-    //     'bg-gray-500 hover:bg-gray-500 text-gray-500 hover:text-gray-500 border-gray-500',
-    //   secondary:
-    //     'bg-blue-500 hover:bg-blue-500 text-blue-500 hover:text-blue-500 border-blue-500',
-    //   error:
-    //     'bg-red-500 hover:bg-red-500 text-red-500 hover:text-red-500 border-red-500',
-    //   success:
-    //     'bg-green-600 hover:bg-green-600 text-green-600 hover:text-green-600 border-green-600',
-    // },
     size: {
       xs: 'px-3 py-1 text-xs gap-1',
       sm: 'px-3 py-1 text-sm gap-1',
@@ -67,15 +57,14 @@ const buttonStyles = cva('flex items-center transition-all border', {
       color: colorVariant,
       class: `text-white bg-${colorVariant} hover:text-${colorVariant} border-${colorVariant} hover:bg-transparent`,
     })) as any),
-    {
-      variant: 'contained',
-      color: 'primary',
-      class:
-        'hover:text-gray-500 bg-primary hover:bg-transparent hover:border-gray-500 border',
-    },
+    ...(Object.keys(Colors).map((colorVariant) => ({
+      variant: 'outlined',
+      color: colorVariant,
+      class: `hover:bg-${colorVariant} border-${colorVariant}`,
+    })) as any),
     {
       variant: 'outlined',
-      color: ['primary', 'secondary', 'error', 'success'],
+      color: Object.keys(Colors),
       class: 'bg-transparent hover:text-white',
     },
   ],

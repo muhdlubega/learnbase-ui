@@ -77,6 +77,7 @@ module.exports = {
   },
   safelist: Object.keys(color).flatMap((colorKey) => [
     `bg-${colorKey}`,
+    `hover:bg-${colorKey}`,
     `hover:text-${colorKey}`,
     `border-${colorKey}`,
   ]),
