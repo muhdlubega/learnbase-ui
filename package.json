@@ -11,7 +11,8 @@
     "reset": "nx reset",
     "clean:dist": "rm -rf dist",
     "build-storybook": "nx build-storybook storybook-host",
-    "test": "jest"
+    "test": "jest",
+    "test:staged": "jest --bail --findRelatedTests"
   },
   "private": true,
   "dependencies": {

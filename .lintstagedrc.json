@@ -1,5 +1,5 @@
 {
-  "*.ts": ["prettier --write", "eslint"],
-  "*.html": ["eslint", "prettier --write"],
-  "*.scss": "prettier --write"
+  "*.{tsx,ts}": ["prettier --write", "eslint"],
+  "*.{scss,css}": "prettier --write",
+  "./{libs,apps}/**/*.{js,jsx,ts,tsx}": ["npm run test:staged"]
 }
