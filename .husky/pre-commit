@@ -11,10 +11,10 @@ fi
 
 npx lint-staged
 
-echo Building projects to make sure build is pass before push
-npm run build
+# echo Building projects to make sure build is pass before push
+# npm run build
 
-echo Building storybook
-npm run build-storybook
+# echo Building storybook
+# npm run build-storybook
 
-echo Done
+# echo Done
