@@ -74,4 +74,6 @@ export const H4: React.FC<H4Props> = ({
   );
 };
 
+H4.displayName = 'H4';
+
 export default H4;

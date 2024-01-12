@@ -74,4 +74,6 @@ export const H6: React.FC<H6Props> = ({
   );
 };
 
+H6.displayName = 'H6';
+
 export default H6;
