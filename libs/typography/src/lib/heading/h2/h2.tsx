@@ -74,4 +74,6 @@ export const H2: React.FC<H2Props> = ({
   );
 };
 
+H2.displayName = 'H2';
+
 export default H2;
