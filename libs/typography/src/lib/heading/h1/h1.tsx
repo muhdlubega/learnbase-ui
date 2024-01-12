@@ -74,4 +74,6 @@ export const H1: React.FC<H1Props> = ({
   );
 };
 
+H1.displayName = 'H1';
+
 export default H1;

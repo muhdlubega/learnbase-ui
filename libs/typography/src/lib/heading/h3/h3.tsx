@@ -74,4 +74,6 @@ export const H3: React.FC<H3Props> = ({
   );
 };
 
+H3.displayName = 'H3';
+
 export default H3;
