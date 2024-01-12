@@ -12,7 +12,7 @@ import {
   TextTransformVariants,
   VerticalAlignmentVariants,
   WeightVariants,
-} from '@learnbase-ui/global-types';
+} from '@learnbase-ui/global/types';
 import { textStyles } from '../../text/text.class';
 import { twMerge } from 'tailwind-merge';
 
@@ -73,5 +73,7 @@ export const H1: React.FC<H1Props> = ({
     </h1>
   );
 };
+
+H1.displayName = 'H1';
 
 export default H1;

@@ -12,7 +12,7 @@ import {
   TextTransformVariants,
   VerticalAlignmentVariants,
   WeightVariants,
-} from '@learnbase-ui/global-types';
+} from '@learnbase-ui/global/types';
 import { textStyles } from '../../text/text.class';
 import { twMerge } from 'tailwind-merge';
 
@@ -73,5 +73,7 @@ export const H6: React.FC<H6Props> = ({
     </h6>
   );
 };
+
+H6.displayName = 'H6';
 
 export default H6;

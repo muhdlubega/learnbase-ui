@@ -1,4 +1,3 @@
-export * from './alignment.types';
 export * from './colors.types';
 export * from './font-style.types';
 export * from './list-style.types';
@@ -10,3 +9,4 @@ export * from './text-decoration.types';
 export * from './text-transform.types';
 export * from './vertical-alignment.types';
 export * from './weight.types';
+export * from './alignment.types';
