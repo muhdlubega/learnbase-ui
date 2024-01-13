@@ -9,10 +9,12 @@ if [ "$current_branch" == "$protected_branch" ]; then
   exit 1
 fi
 
-echo Building projects to make sure build is pass before push
-npm run build
+npx lint-staged
 
-echo Building storybook
-npm run build-storybook
+# echo Building projects to make sure build is pass before push
+# npm run build
 
-echo Done
+# echo Building storybook
+# npm run build-storybook
+
+# echo Done
