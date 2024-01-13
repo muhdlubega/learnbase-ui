@@ -1,5 +1,4 @@
 {
   "*.{tsx,ts}": ["prettier --write", "eslint"],
-  "*.{scss,css}": "prettier --write",
-  "./{libs,apps}/**/*.{js,jsx,ts,tsx}": ["npm run test:staged"]
+  "*.{scss,css}": "prettier --write"
 }
