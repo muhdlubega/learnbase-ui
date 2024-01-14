@@ -28,7 +28,7 @@ jobs:
         run: npm run build-storybook
 
       - name: Set status check
-        run: echo "::set-output name=BUILD_STATUS::success"
+        run: echo "BUILD_STATUS=success" >> $GITHUB_OUTPUT
 
       - name: Upload status
         uses: actions/upload-artifact@v2
