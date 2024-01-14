@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Button, ButtonProps } from '.';
+import { Button } from '.';
 import { FiAlertCircle } from 'react-icons/fi';
 import { color } from '@learnbase-ui/global/constant';
 
@@ -10,7 +10,7 @@ const icon: Record<string, React.ReactNode | null> = {
 
 const meta: Meta<typeof Button> = {
   component: Button,
-  title: 'Button',
+  title: 'Components/Button',
   tags: ['autodocs'],
   // parameters: { layout: 'centered' },
   argTypes: {
@@ -96,20 +96,6 @@ export const Contained = {
   args: {
     ...Default.args,
     variant: 'contained',
-  },
-};
-
-export const Primary = {
-  args: {
-    ...Default.args,
-    color: 'primary',
-  },
-};
-
-export const Secondary = {
-  args: {
-    ...Default.args,
-    color: 'secondary',
   },
 };
 
