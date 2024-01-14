@@ -75,8 +75,8 @@ module.exports = {
       },
       borderWidth: {
         DEFAULT: '1px',
-        '6': '6px',
-      }
+        6: '6px',
+      },
     },
   },
   safelist: Object.keys(color).flatMap((colorKey) => [

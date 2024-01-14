@@ -5,7 +5,7 @@ import {
   RoundedVariants,
   SizeVariants,
   VerticalAlignmentVariants,
-} from '@learnbase-ui/global';
+} from '@learnbase-ui/global/types';
 import { labelStyles, textFieldStyles } from './text-field.class';
 import { twMerge } from 'tailwind-merge';
 
@@ -115,7 +115,7 @@ export const TextField: React.FC<TextFieldProps> = ({
           className={twMerge(
             labelStyles({
               disabled,
-              labelPosition
+              labelPosition,
             })
           )}
           htmlFor={name}
