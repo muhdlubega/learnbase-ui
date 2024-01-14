@@ -1,4 +1,4 @@
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import TextField from '.';
 
@@ -22,18 +22,14 @@ jest.mock('.', () => {
 describe('TextField', () => {
   test('renders without errors', () => {
     render(<TextField />);
-    const textFieldElement = document.querySelector(
-      '[data-testid="mocked-text-field"]'
-    );
+    const textFieldElement = screen.getByTestId('mocked-text-field');
 
     expect(textFieldElement).toBeInTheDocument();
   });
 
   test('handles input change', () => {
-    const { container } = render(<TextField />);
-    const inputElement = container.querySelector(
-      '[data-testid="mocked-input"]'
-    );
+    render(<TextField />);
+    const inputElement = screen.getByTestId('mocked-input');
 
     fireEvent.change(inputElement as Element, {
       target: { value: 'New Value' },
@@ -44,14 +40,14 @@ describe('TextField', () => {
 
   test('handles icon click', () => {
     const onIconClickMock = jest.fn();
-    const { container } = render(
+    render(
       <TextField
         icon={<div data-testid="mocked-icon">Icon Content</div>}
         onIconClick={onIconClickMock}
       />
     );
 
-    const iconElement = container.querySelector('[data-testid="mocked-icon"]');
+    const iconElement = screen.getByTestId('mocked-icon');
     fireEvent.click(iconElement as Element);
 
     expect(onIconClickMock).toHaveBeenCalled();

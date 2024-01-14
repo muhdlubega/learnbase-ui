@@ -3,6 +3,7 @@ export * from './font-style.types';
 export * from './list-style.types';
 export * from './numeric.types';
 export * from './overflow.types';
+export * from './rounded.types';
 export * from './size.types';
 export * from './spacing.types';
 export * from './text-decoration.types';

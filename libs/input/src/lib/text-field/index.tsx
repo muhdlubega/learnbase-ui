@@ -1,16 +1,17 @@
 import React, { ChangeEvent, ComponentProps, useRef, useState } from 'react';
-import { ColorVariants, SizeVariants } from '@learnbase-ui/global';
-import { textFieldStyles } from './text-field.class';
+import {
+  AlignmentVariants,
+  ColorVariants,
+  RoundedVariants,
+  SizeVariants,
+  VerticalAlignmentVariants,
+} from '@learnbase-ui/global';
+import { labelStyles, textFieldStyles } from './text-field.class';
 import { twMerge } from 'tailwind-merge';
 
 export type TextFieldSizeProps = Exclude<
   SizeVariants,
   '2xl' | '3xl' | '4xl' | '5xl'
->;
-
-export type WidthProps = Exclude<
-  SizeVariants,
-  'xs' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl'
 >;
 
 export interface TextFieldProps extends ComponentProps<'input'> {
@@ -20,14 +21,14 @@ export interface TextFieldProps extends ComponentProps<'input'> {
   disabled?: boolean;
   fullWidth?: boolean;
   icon?: React.ReactNode;
-  iconPosition?: 'start' | 'end';
+  iconPosition?: Extract<AlignmentVariants, 'start' | 'end'>;
   isInvalid?: boolean;
   label?: string;
-  labelPosition?: 'top' | 'bottom';
+  labelPosition?: Extract<VerticalAlignmentVariants, 'top' | 'bottom'>;
   onIconClick?: () => void;
-  rounded?: 'none' | 'sm' | 'md' | 'lg' | 'full';
+  rounded?: RoundedVariants;
   textSize?: TextFieldSizeProps;
-  width?: WidthProps;
+  width?: Extract<SizeVariants, 'sm' | 'md' | 'lg'>;
 }
 
 export const TextField: React.FC<TextFieldProps> = ({
@@ -80,7 +81,7 @@ export const TextField: React.FC<TextFieldProps> = ({
         }),
         icon ? 'justify-between' : 'justify-center',
         className,
-        `inline-flex center min-w-[60px] cursor-pointer ${
+        `inline-flex center min-w-[60px] ${
           disabled ? 'bg-gray-50 border-gray-300' : `border-${color}`
         }`
       )}
@@ -92,9 +93,8 @@ export const TextField: React.FC<TextFieldProps> = ({
             textSize,
             rounded,
             iconPosition,
-            fullWidth,
           }),
-          `border-none focus-visible:outline-none ${
+          `border-none focus-visible:outline-none w-full ${
             disabled
               ? 'bg-gray-50 text-gray-300 placeholder:text-gray-300'
               : `border-${color}`
@@ -112,15 +112,12 @@ export const TextField: React.FC<TextFieldProps> = ({
       />
       {label && (
         <label
-          className={`absolute block max-w-[200px] overflow-hidden whitespace-nowrap overflow-ellipsis ${
-            labelPosition === 'top'
-              ? 'translate-y-[-23px]'
-              : 'translate-y-[23px]'
-          } ${
-            disabled
-              ? 'text-gray-300 bg-gradient-to-t from-gray-50 to-transparent'
-              : 'bg-white'
-          } p-0.5 text-xs`}
+          className={twMerge(
+            labelStyles({
+              disabled,
+              labelPosition
+            })
+          )}
           htmlFor={name}
         >
           {label}
@@ -128,7 +125,7 @@ export const TextField: React.FC<TextFieldProps> = ({
       )}
       {icon && (
         <div
-          className={twMerge(disabled ? 'text-gray-300' : '')}
+          className={disabled ? 'text-gray-300' : ''}
           onClick={onIconClick ?? handleIconClick}
         >
           {icon}
