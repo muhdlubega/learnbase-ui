@@ -73,6 +73,10 @@ module.exports = {
           'Noto Color Emoji',
         ],
       },
+      borderWidth: {
+        DEFAULT: '1px',
+        '6': '6px',
+      }
     },
   },
   safelist: Object.keys(color).flatMap((colorKey) => [
