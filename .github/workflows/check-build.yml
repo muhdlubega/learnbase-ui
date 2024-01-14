@@ -1,4 +1,4 @@
-name: Check Build
+name: Build CI
 
 on:
   pull_request:
@@ -6,23 +6,24 @@ on:
       - main
 
 jobs:
-  build:
+  main:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
         with:
-          node-version: '18'
+          fetch-depth: 0
+      # Cache node_modules
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: 'npm'
+      - run: npm ci
+      - uses: nrwl/nx-set-shas@v3
+      # This line is needed for nx affected to work when CI is running on a PR
+      - run: git branch --track main origin/main
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build
-        run: npm run build:ci
+      - run: npx nx format:check
+      - run: npx nx affected -t lint,test,build --parallel=3
 
       - name: Build storybook
         run: npm run build-storybook
