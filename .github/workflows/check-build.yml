@@ -3,7 +3,7 @@ name: Check Build
 on:
   pull_request:
     branches:
-      - main
+      - '*'
 
 jobs:
   build:
@@ -19,7 +19,7 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --prefer-offline
 
       - uses: nrwl/nx-set-shas@v4
 
