@@ -1,4 +1,4 @@
-name: Build CI
+name: Check Build
 
 on:
   pull_request:
@@ -6,17 +6,21 @@ on:
       - main
 
 jobs:
-  main:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          fetch-depth: 0
-      # Cache node_modules
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: 'npm'
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
       - run: npm ci
       - uses: nrwl/nx-set-shas@v3
       # This line is needed for nx affected to work when CI is running on a PR
@@ -32,7 +36,7 @@ jobs:
         run: echo "::set-output name=BUILD_STATUS::success"
 
       - name: Upload status
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v2
         with:
           name: build-status
           path: .github/build-status
