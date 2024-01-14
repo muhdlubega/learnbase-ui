@@ -4,7 +4,7 @@
   "sourceRoot": "libs/storybook-host/src",
   "projectType": "library",
   "tags": ["type:storybook"],
-  "implicitDependencies": ["button", "text-field", "typography"],
+  "implicitDependencies": ["button", "input", "typography"],
   "targets": {
     "lint": {
       "executor": "@nx/eslint:lint",

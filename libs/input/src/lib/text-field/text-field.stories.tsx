@@ -42,7 +42,7 @@ const meta: Meta<typeof TextField> = {
       },
     },
     width: {
-      description: '`sm` | `md` | `lg`' ,
+      description: '`sm` | `md` | `lg`',
       options: ['sm', 'md', 'lg'],
       control: { type: 'radio' },
       table: {

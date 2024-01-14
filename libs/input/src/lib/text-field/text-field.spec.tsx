@@ -35,7 +35,9 @@ describe('TextField', () => {
       '[data-testid="mocked-input"]'
     );
 
-    fireEvent.change(inputElement as Element, { target: { value: 'New Value' } });
+    fireEvent.change(inputElement as Element, {
+      target: { value: 'New Value' },
+    });
 
     expect(inputElement).toHaveValue('New Value');
   });

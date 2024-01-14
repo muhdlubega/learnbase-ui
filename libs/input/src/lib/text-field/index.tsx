@@ -76,7 +76,7 @@ export const TextField: React.FC<TextFieldProps> = ({
           iconPosition,
           fullWidth,
           borderWidth,
-          width
+          width,
         }),
         icon ? 'justify-between' : 'justify-center',
         className,
@@ -106,7 +106,7 @@ export const TextField: React.FC<TextFieldProps> = ({
         onChange={handleChange}
         placeholder={placeholder}
         ref={inputRef}
-        type='text'
+        type="text"
         value={value}
         {...rest}
       />
