@@ -28,10 +28,4 @@ jobs:
         run: npm run build-storybook
 
       - name: Set status check
-        run: echo "BUILD_STATUS=success" >> $GITHUB_OUTPUT
-
-      - name: Upload status
-        uses: actions/upload-artifact@v4
-        with:
-          name: build-status
-          path: .github/build-status
+        run: echo "BUILD_STATUS=error" >> $GITHUB_OUTPUT
