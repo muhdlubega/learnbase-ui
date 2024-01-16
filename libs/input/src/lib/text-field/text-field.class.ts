@@ -54,7 +54,7 @@ export const textFieldStyles = cva(
       textSize: 'md',
       width: 'md',
     },
-  }
+  },
 );
 
 export const labelStyles = cva(
@@ -74,5 +74,5 @@ export const labelStyles = cva(
       disabled: false,
       labelPosition: 'top',
     },
-  }
+  },
 );
