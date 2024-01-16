@@ -19,7 +19,10 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install --prefer-offline
+        run: npm install
 
-      - name: Run Jest
+      - name: Run Linter
+        run: npm run lint
+
+      - name: Run Test
         run: npm run test

@@ -11,9 +11,10 @@
     "reset": "nx reset",
     "clean:dist": "rm -rf dist",
     "build-storybook": "nx build-storybook storybook-host",
-    "test": "jest --coverage",
     "test:staged": "jest --bail --findRelatedTests",
-    "lint:eslint": "eslint --cache --max-warnings 0  \"**/*.{ts,tsx,js,jsx,vue}\" --fix"
+    "lint:eslint": "eslint --cache --max-warnings 0  \"**/*.{ts,tsx,js,jsx,vue}\" --fix",
+    "test": "nx run-many --target=test --all --parallel --exclude=global,eslint-rules,learnbase-ui",
+    "lint": "npx nx run-many --target=lint --all --parallel"
   },
   "private": true,
   "dependencies": {
@@ -33,7 +34,7 @@
     "@babel/preset-react": "^7.14.5",
     "@nx/eslint": "^17.2.8",
     "@nx/eslint-plugin": "17.2.8",
-    "@nx/jest": "17.2.8",
+    "@nx/jest": "^17.2.8",
     "@nx/js": "17.2.8",
     "@nx/linter": "^17.2.8",
     "@nx/react": "17.2.8",
@@ -77,7 +78,6 @@
     "eslint-plugin-storybook": "^0.6.13",
     "eslint-plugin-tailwindcss": "^3.13.0",
     "husky": "^8.0.3",
-    "jest": "^29.4.1",
     "jest-environment-jsdom": "^29.4.1",
     "jsdom": "~22.1.0",
     "lint-staged": "^15.2.0",
