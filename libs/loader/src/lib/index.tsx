@@ -1,4 +1,5 @@
-import { ColorVariants } from '@learnbase-ui/global';
+import { ColorVariants, generateClasses } from '@learnbase-ui/global';
+import { cva } from 'cva';
 import React from 'react';
 
 /* eslint-disable-line */
@@ -6,24 +7,24 @@ export type LoaderProps = {
   color?: ColorVariants;
 };
 
-// const loaderStyles = cva(
-//   'inline w-8 h-8 text-gray-200 animate-spin dark:text-gray-600',
-//   {
-//     variants: {
-//       color: { ...generateClasses('fill') },
-//     },
-//     defaultVariants: {
-//       color: 'primary',
-//     },
-//   }
-// );
+const loaderStyles = cva(
+  'inline w-8 h-8 text-gray-200 animate-spin dark:text-gray-600',
+  {
+    variants: {
+      color: generateClasses('fill'),
+    },
+    defaultVariants: {
+      color: 'primary',
+    },
+  },
+);
 
-export const Loader: React.FC<LoaderProps> = () => {
+export const Loader: React.FC<LoaderProps> = ({ color }) => {
   return (
     <div role="status" className="light">
       <svg
         aria-hidden="true"
-        // className={loaderStyles({ color })}
+        className={loaderStyles({ color })}
         viewBox="0 0 100 101"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
