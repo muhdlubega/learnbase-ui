@@ -10,7 +10,7 @@ const icon: Record<string, React.ReactNode | null> = {
 
 const meta: Meta<typeof Button> = {
   component: Button,
-  title: 'Components/Button',
+  title: 'Button/Button/Button',
   tags: ['autodocs'],
   // parameters: { layout: 'centered' },
   argTypes: {
