@@ -83,7 +83,7 @@ export const TextField: React.FC<TextFieldProps> = ({
         className,
         `inline-flex center min-w-[60px] ${
           disabled ? 'bg-gray-50 border-gray-300' : `border-${color}`
-        }`
+        }`,
       )}
     >
       <input
@@ -98,7 +98,7 @@ export const TextField: React.FC<TextFieldProps> = ({
             disabled
               ? 'bg-gray-50 text-gray-300 placeholder:text-gray-300'
               : `border-${color}`
-          }`
+          }`,
         )}
         disabled={disabled}
         id={name}
@@ -116,7 +116,7 @@ export const TextField: React.FC<TextFieldProps> = ({
             labelStyles({
               disabled,
               labelPosition,
-            })
+            }),
           )}
           htmlFor={name}
         >
