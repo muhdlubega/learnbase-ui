@@ -65,7 +65,7 @@ export const H5: React.FC<H5Props> = ({
           listStyleType,
           fontVariantNumeric,
         }),
-        className
+        className,
       )}
       {...rest}
     >

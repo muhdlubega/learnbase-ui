@@ -65,7 +65,7 @@ export const H1: React.FC<H1Props> = ({
           listStyleType,
           fontVariantNumeric,
         }),
-        className
+        className,
       )}
       {...rest}
     >

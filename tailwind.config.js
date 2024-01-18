@@ -9,6 +9,7 @@ module.exports = {
     join(__dirname, 'apps/**/*.{ts,tsx,html}'),
     ...createGlobPatternsForDependencies(__dirname),
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -84,6 +85,7 @@ module.exports = {
     `hover:bg-${colorKey}`,
     `hover:text-${colorKey}`,
     `border-${colorKey}`,
+    `fill-${colorKey}`,
   ]),
   plugins: [],
 };

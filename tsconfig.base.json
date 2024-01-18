@@ -21,7 +21,7 @@
         "libs/global/src/lib/constant/index.ts"
       ],
       "@learnbase-ui/global/types": ["libs/global/src/lib/types/index.ts"],
-      "@learnbase-ui/input": ["libs/input/src/index.ts"],
+      "@learnbase-ui/loader": ["libs/loader/src/index.ts"],
       "@learnbase-ui/storybook-host": ["libs/storybook-host/src/index.ts"],
       "@learnbase-ui/typography": ["libs/typography/src/index.ts"]
     }

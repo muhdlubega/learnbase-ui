@@ -65,7 +65,7 @@ export const H2: React.FC<H2Props> = ({
           listStyleType,
           fontVariantNumeric,
         }),
-        className
+        className,
       )}
       {...rest}
     >

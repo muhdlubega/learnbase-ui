@@ -44,7 +44,7 @@ describe('TextField', () => {
       <TextField
         icon={<div data-testid="mocked-icon">Icon Content</div>}
         onIconClick={onIconClickMock}
-      />
+      />,
     );
 
     const iconElement = screen.getByTestId('mocked-icon');
