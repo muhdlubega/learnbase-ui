@@ -10,7 +10,7 @@ const icon: Record<string, React.ReactNode | null> = {
 
 const meta: Meta<typeof TextField> = {
   component: TextField,
-  title: 'Input/TextField',
+  title: 'Input/Input/TextField',
   tags: ['autodocs'],
   argTypes: {
     className: { table: { disable: true } },
