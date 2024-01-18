@@ -11,9 +11,9 @@ describe('Text Component', () => {
 
   it('applies custom class correctly', () => {
     const { container } = render(
-      <Text className="custom-class">Custom Class Test</Text>
+      <Text className="bg-white">Custom Class Test</Text>,
     );
-    expect(container.firstChild).toHaveClass('custom-class');
+    expect(container.firstChild).toHaveClass('bg-white');
   });
 
   it('applies color variant correctly', () => {

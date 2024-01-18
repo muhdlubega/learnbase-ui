@@ -65,7 +65,7 @@ export const Text: React.FC<TextProps> = ({
           listStyleType,
           fontVariantNumeric,
         }),
-        className
+        className,
       )}
       {...rest}
     >
