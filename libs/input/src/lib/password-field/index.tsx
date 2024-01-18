@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 import React, { ChangeEvent, ComponentProps, useRef, useState } from 'react';
 import {
   AlignmentVariants,
@@ -81,8 +82,8 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
         }),
         icon ? 'justify-between' : 'justify-center',
         className,
-        `inline-flex center min-w-[60px] ${
-          disabled ? 'bg-gray-50 border-gray-300' : `border-${color}`
+        `center inline-flex min-w-[60px] ${
+          disabled ? 'border-gray-300 bg-gray-50' : `border-${color}`
         }`,
       )}
     >
@@ -94,7 +95,7 @@ export const PasswordField: React.FC<PasswordFieldProps> = ({
             rounded,
             iconPosition,
           }),
-          `border-none focus-visible:outline-none w-full ${
+          `w-full border-none focus-visible:outline-none ${
             disabled
               ? 'bg-gray-50 text-gray-300 placeholder:text-gray-300'
               : `border-${color}`
