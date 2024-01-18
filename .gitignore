@@ -39,5 +39,4 @@ testem.log
 Thumbs.db
 
 .nx/cache
-package-lock.json
 build-storybook.log
