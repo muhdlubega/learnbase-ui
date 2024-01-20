@@ -1,0 +1,1 @@
+import{t as a}from"./chunk-ZGA76URP-Uk8hDnuP.js";const r={darkMode:{dark:{...a.dark,appBg:"black"},light:{...a.normal,appBg:"red"}},themes:{clearable:!1,list:[{name:"Light",class:[],color:"#ffffff",default:!0},{name:"Dark",class:["dark"],color:"#000000"}]}};export{r as parameters};
