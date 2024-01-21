@@ -1,4 +1,4 @@
-import { ColorVariants, generateClasses } from '@learnbase-ui/global';
+import { ColorVariants, colorWrapper } from '@learnbase-ui/global';
 import { cva } from 'cva';
 import React from 'react';
 
@@ -11,7 +11,7 @@ const loaderStyles = cva(
   'inline w-8 h-8 text-gray-200 animate-spin dark:text-gray-600',
   {
     variants: {
-      color: generateClasses('fill'),
+      color: colorWrapper('fill'),
     },
     defaultVariants: {
       color: 'primary',
