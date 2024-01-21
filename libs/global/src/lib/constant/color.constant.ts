@@ -57,7 +57,7 @@ export const colorCode: ColorStyles = {
 };
 
 // Generate tailwind classes
-export function generateClasses(name: string) {
+export function colorWrapper(name: string) {
   return {
     primary: `${name}-primary`,
     secondary: `${name}-secondary`,
@@ -110,55 +110,3 @@ export function generateClasses(name: string) {
     lightRose: `${name}-lightRose`,
   };
 }
-
-export const color: ColorStyles = {
-  primary: 'text-primary',
-  secondary: 'text-secondary',
-  error: 'text-error',
-  success: 'text-success',
-  warning: 'text-warning',
-  darkSlate: 'text-darkSlate',
-  lightSlate: 'text-lightSlate',
-  darkGray: 'text-darkGray',
-  lightGray: 'text-lightGray',
-  darkZinc: 'text-darkZinc',
-  lightZinc: 'text-lightZinc',
-  darkNeutral: 'text-darkNeutral',
-  lightNeutral: 'text-lightNeutral',
-  darkStone: 'text-darkStone',
-  lightStone: 'text-lightStone',
-  darkRed: 'text-darkRed',
-  lightRed: 'text-lightRed',
-  darkOrange: 'text-darkOrange',
-  lightOrange: 'text-lightOrange',
-  darkAmber: 'text-darkAmber',
-  lightAmber: 'text-lightAmber',
-  darkYellow: 'text-darkYellow',
-  lightYellow: 'text-lightYellow',
-  darkLime: 'text-darkLime',
-  lightLime: 'text-lightLime',
-  darkGreen: 'text-darkGreen',
-  lightGreen: 'text-lightGreen',
-  darkEmerald: 'text-darkEmerald',
-  lightEmerald: 'text-lightEmerald',
-  darkTeal: 'text-darkTeal',
-  lightTeal: 'text-lightTeal',
-  darkCyan: 'text-darkCyan',
-  lightCyan: 'text-lightCyan',
-  darkSky: 'text-darkSky',
-  lightSky: 'text-lightSky',
-  darkBlue: 'text-darkBlue',
-  lightBlue: 'text-lightBlue',
-  darkIndigo: 'text-darkIndigo',
-  lightIndigo: 'text-lightIndigo',
-  darkViolet: 'text-darkViolet',
-  lightViolet: 'text-lightViolet',
-  darkPurple: 'text-darkPurple',
-  lightPurple: 'text-lightPurple',
-  darkFuchsia: 'text-darkFuchsia',
-  lightFuchsia: 'text-lightFuchsia',
-  darkPink: 'text-darkPink',
-  lightPink: 'text-lightPink',
-  darkRose: 'text-darkRose',
-  lightRose: 'text-lightRose',
-};

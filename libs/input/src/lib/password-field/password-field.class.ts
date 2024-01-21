@@ -1,11 +1,11 @@
-import { color as Colors } from '@learnbase-ui/global/constant';
+import { colorWrapper } from '@learnbase-ui/global/constant';
 import { cva } from 'cva';
 
 export const passwordFieldStyles = cva(
   'flex items-center transition-all cursor-pointer',
   {
     variants: {
-      color: Colors,
+      color: colorWrapper('text'),
       textSize: {
         xs: 'px-2 py-1 text-xs gap-1',
         sm: 'px-2 py-1 text-sm gap-1',

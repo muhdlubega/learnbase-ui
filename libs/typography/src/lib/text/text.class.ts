@@ -1,9 +1,9 @@
-import { color as Colors } from '@learnbase-ui/global/constant';
+import { colorWrapper } from '@learnbase-ui/global/constant';
 import { cva } from 'cva';
 
 export const textStyles = cva('text-black', {
   variants: {
-    color: Colors,
+    color: colorWrapper('text'),
     fontStyle: {
       normal: 'font-normal',
       italic: 'italic',
