@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Loader } from '.';
-import { color } from '@learnbase-ui/global';
+import { colorWrapper } from '@learnbase-ui/global';
 
 const meta: Meta<typeof Loader> = {
   component: Loader,
@@ -9,7 +9,7 @@ const meta: Meta<typeof Loader> = {
   argTypes: {
     color: {
       description: '`ColorVariant`',
-      options: Object.keys(color),
+      options: Object.keys(colorWrapper('fill')),
       control: { type: 'select' },
       table: {
         // type: { summary: '-' },
