@@ -1,9 +1,9 @@
 import React from 'react';
 import { ColorVariants, SizeVariants } from '@learnbase-ui/global/types';
-import { colorWrapper } from '@learnbase-ui/global/constant';
+import { colorCode as Colors } from '@learnbase-ui/global/constant';
 import { twMerge } from 'tailwind-merge';
-import { cva } from 'cva';
 import '../styles.scss';
+import { cva } from 'cva';
 
 export type ButtonSizeProps = Exclude<
   SizeVariants,
@@ -20,8 +20,6 @@ export interface ButtonProps
   iconPosition?: 'start' | 'end';
   fullWidth?: boolean;
 }
-
-const Colors = colorWrapper('text');
 
 const buttonStyles = cva('flex items-center transition-all border', {
   variants: {

@@ -88,5 +88,6 @@ module.exports = {
     `hover:text-${colorKey}`,
     `border-${colorKey}`,
     `fill-${colorKey}`,
+    `text-${colorKey}`,
   ]),
 };
