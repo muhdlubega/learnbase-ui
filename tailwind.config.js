@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-var-requires */
 const { createGlobPatternsForDependencies } = require('@nx/react/tailwind');
 const { join } = require('path');
 const { color } = require('./libs/global/src');
@@ -87,5 +89,4 @@ module.exports = {
     `border-${colorKey}`,
     `fill-${colorKey}`,
   ]),
-  plugins: [],
 };

@@ -3,6 +3,7 @@ import { ColorVariants, SizeVariants } from '@learnbase-ui/global/types';
 import { colorWrapper } from '@learnbase-ui/global/constant';
 import { twMerge } from 'tailwind-merge';
 import { cva } from 'cva';
+import '../styles.scss';
 
 export type FloatingActionButtonSizeProps = Exclude<
   SizeVariants,
