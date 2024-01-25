@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { ButtonGroup } from '.';
 import { FiAlertCircle } from 'react-icons/fi';
-import { colorWrapper } from '@learnbase-ui/global/constant';
+import { colorCode } from '@learnbase-ui/global/constant';
 
 const icon: Record<string, React.ReactNode | null> = {
   icon: <FiAlertCircle />,
@@ -36,7 +36,7 @@ const meta: Meta<typeof ButtonGroup> = {
     },
     color: {
       description: '`ColorVariant`',
-      options: Object.keys(colorWrapper('text')),
+      options: Object.keys(colorCode),
       control: { type: 'select' },
       table: {
         // type: { summary: '-' },

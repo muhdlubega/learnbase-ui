@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { PasswordField } from '.';
 import { FiChevronRight } from 'react-icons/fi';
-import { colorWrapper } from '@learnbase-ui/global/constant';
+import { colorCode } from '@learnbase-ui/global/constant';
 
 const icon: Record<string, React.ReactNode | null> = {
   icon: <FiChevronRight />,
@@ -25,7 +25,7 @@ const meta: Meta<typeof PasswordField> = {
     },
     color: {
       description: '`ColorVariant`',
-      options: Object.keys(colorWrapper('text')),
+      options: Object.keys(colorCode),
       control: { type: 'select' },
       table: {
         // type: { summary: '-' },
